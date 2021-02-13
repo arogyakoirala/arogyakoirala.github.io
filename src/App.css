@@ -1,5 +1,36 @@
-.App {
-  text-align: center;
+body {
+  /* text-align: center; */
+  background-color: #fff;
+  font-family: "Source Sans Pro";
+}
+
+a {
+  /* font-family: 'Roboto Mono'; */
+  text-decoration: underline;
+  color: #000;
+}
+
+.project-links:after {
+  content :" →"
+}
+
+.about {
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+.work {
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+.MuiTimelineItem-missingOppositeContent:before {
+  flex: unset  !important;
+  padding: unset !important;
+  margin-left: -17px;
+}
+.MuiTimelineSeparator-root {
+  margin-top: 10px;
 }
 
 .App-logo {
