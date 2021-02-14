@@ -82,12 +82,21 @@ function Work({background, textColor, data}) {
             <p style={{fontSize: '1.1rem'}}>{d.role}</p>
             <SRLWrapper options={options}>
 
-            {d.images.map((i)=>{return <a href={process.env.PUBLIC_URL + 'img/' + i}><img style={{marginRight: '1rem'}} src={process.env.PUBLIC_URL + 'img/thumbs/' + i.split(".")[0] + "_tn.jpg" } /></a>})}
+            {d.images.length > 0 && d.images.map((i)=>{return <a href={process.env.PUBLIC_URL + 'img/' + i}><img style={{marginRight: '1rem'}} src={process.env.PUBLIC_URL + 'img/thumbs/' + i.split(".")[0] + "_tn.jpg" } /></a>})}
             </SRLWrapper>
             <br/>
-            <span  style={{textTransform: 'uppercase', fontSize: '0.8rem', fontWeight: 700}}>Links</span >
+            {d.links.length > 0 && <span  style={{textTransform: 'uppercase', fontSize: '0.8rem', fontWeight: 700}}>My work</span >}
             {d.links.map((l)=>{return <p style={{margin: 0}}><a className="project-links" href={l.url} style={{fontSize: '1.1rem'}}>{l.label}</a></p>})}
             <br/>
+
+
+            {d.related.length > 0 &&  <span  style={{textTransform: 'uppercase', fontSize: '0.8rem', fontWeight: 700}}>Related work (or) links</span >}
+            {d.related.map((l)=>{return <p style={{margin: 0}}><a className="project-links" href={l.url} style={{fontSize: '1.1rem'}}>{l.label}</a></p>})}
+
+            {d.related.length > 0 && <br/>}
+     
+            
+
             </TimelineContent>
           </TimelineItem>
          )

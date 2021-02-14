@@ -33,6 +33,11 @@ a {
   margin-top: 10px;
 }
 
+.MuiTimelineDot-root {
+  margin-bottom: 15px !important;
+
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
