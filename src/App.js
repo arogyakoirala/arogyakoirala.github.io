@@ -18,11 +18,12 @@ import SimpleReactLightbox from 'simple-react-lightbox'
 
 
 const workArray = [
+
   {
     name: "Baato",
     shortDesc: "Nepal’s first cloud-based maps and location services platform",
     role:
-      "Currently serving as project technical lead and full stack developer for Baato.io, Nepal’s first cloud based maps and location services platform; developed APIs for geocoding (location search), reverse-geocoding (address generation), navigation (driving and walking directions), and vector tile (map styles); developed auxiliary modules that enabled API throttling, rate limiting, usage analytics, automated billing, invoice generation, and online payments; developed the user facing website for Baato.io, and worked on the baato-js-client node library that allows web developers to quickly integrate Baato’s services into their existing JavaScript based applications.",
+      "Served as project technical lead and full stack developer for Baato.io, Nepal’s first cloud based maps and location services platform; developed APIs for geocoding (location search), reverse-geocoding (address generation), navigation (driving and walking directions), and vector tile (map styles); developed auxiliary modules that enabled API throttling, rate limiting, usage analytics, automated billing, invoice generation, and online payments; developed the user facing website for Baato.io, and worked on the baato-js-client node library that allows web developers to quickly integrate Baato’s services into their existing JavaScript based applications.",
     images: ["baato1.png"],
     links: [
       { label: "Baato web application", url: "https://baato.io" },
@@ -41,6 +42,25 @@ const workArray = [
       { label: "Baato Vehicle Routing Service", url: "https://baato.io/vrs" },
     ],
   },
+
+  {
+    name: "Cities COVID-19 Mitigation Mapping (C2M2)",
+    shortDesc: "Understanding the effects of COVID-19 on Tourism in Nepal",
+    role:
+      "Served as technical lead for the Kathmandu Hub of the Cities' Covid Mitigation Mapping project: worked with businessess and members of the Nepali tourism workforce to iteratively design and deploy digital surveys aimed at understanding the second order effects of Covid-19 on the sector; analysed data from these surveys to prepare data-narratives and shared them with the tourism community (see interim report); facilitated stakeholders' workshops to disseminate findings and results; collated, digitized, and disseminated tourism data and statistics for broader use through Github; assisted in the design and early development phase of the C2M2 Kathmandu Dashboard. The project is part of the MapGive Initiative in the Office of the Geographer at the U.S. Department of State.",
+    images: ["c2m2ktm1.png", "c2m2ktm2.png"],
+    links: [
+      { label: "C2M2 Kathmandu Interim Report (released on May 2021)", url: "https://c2m2-asia.github.io/kathmandu" },
+      { label: "C2M2 Kathmandu Data Lake", url: "https://c2m2-asia.github.io/kathmandu-data/" },
+      { label: "C2M2 Kathmandu Dashboard", url: "http://c2m2-kathmandu-demo.surge.sh/" },
+      
+    ],
+    related: [
+      { label: "Tourism and COVID-19 in Nepal (ArcGIS Story Map)", url: "https://storymaps.arcgis.com/stories/e5727482aa3c431e8c001b97a5c81934" },
+      { label: "C2M2 Global Project Website", url: "https://mapgive.state.gov/c2m2/" },
+    ],
+  },
+
 
   {
     name: "Anaconda Water Management Platform",
@@ -138,14 +158,14 @@ const workArray = [
         label: "D3 Visualization gallery",
         url: "https://observablehq.com/collection/@arkoblog/opendataportal",
       },
-      {label: "After the quake (data scrollytelling project)", url: "http://afterthequake.surge.sh/"}
+      { label: "After the quake (data scrollytelling project)", url: "http://afterthequake.surge.sh/" }
     ],
     related: [
       {
         label: "Machine learning competition by DrivenData",
         url: "https://www.drivendata.org/competitions/57/nepal-earthquake/",
       },
-      {label: "After the quake process blog", url:"https://www.sabine-loos.com/blog-1/afterquake-visrisk"},
+      { label: "After the quake process blog", url: "https://www.sabine-loos.com/blog-1/afterquake-visrisk" },
     ],
   },
 
@@ -210,7 +230,7 @@ const experienceArray = [{
   location: "Kathmandu, Nepal",
   date: "December 2016 – Present",
   responsibilities: []
-}, 
+},
 {
   role: "Decision Scientist",
   organization: "Mu Sigma Business Solutions",
@@ -225,21 +245,21 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-      <SimpleReactLightbox>
-      <Navigation background={background} textColor={textColor} />
-      <Wrapper footer={false}
-        background={background}
-        textColor={textColor}>
-<About/>
-<br/>
+        <SimpleReactLightbox>
+          <Navigation background={background} textColor={textColor} />
+          <Wrapper footer={false}
+            background={background}
+            textColor={textColor}>
+            <About />
+            <br />
 
-<br/>
-{/* <Experience data={experienceArray}/> */}
-<Work data={workArray}/>
-<NotJustCode/>
-{/* <Education data={educationArray}/> */}
-</Wrapper>
-          </SimpleReactLightbox>
+            <br />
+            {/* <Experience data={experienceArray}/> */}
+            <Work data={workArray} />
+            <NotJustCode />
+            {/* <Education data={educationArray}/> */}
+          </Wrapper>
+        </SimpleReactLightbox>
       </BrowserRouter>
     </div>
   );
