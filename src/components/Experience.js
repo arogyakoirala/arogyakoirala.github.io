@@ -31,7 +31,7 @@ function Experience({background, textColor, data}) {
 
     <div  className="col-md-8 work pt-5">
      
-     <span  style={{textTransform: 'uppercase', fontSize: '0.8rem', fontWeight: 700}}>Relevant Experience</span >
+     <span  style={{textTransform: 'uppercase', fontSize: '0.9rem', fontWeight: 700}}>Relevant Experience</span >
         <br/>
         <Timeline align="left">
 

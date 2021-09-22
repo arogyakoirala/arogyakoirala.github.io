@@ -53,10 +53,13 @@ function NavigationView(props) {
                       color: props.textColor
                         ? props.textColor
                         : 'rgba(80,80,80,1)',
+                        display: 'inline-block',
+                        paddingRight: '20px',
                     }}
                   >
                     Arogya Koirala
                   </div>
+
  
                 </div>
               </NavbarLink>

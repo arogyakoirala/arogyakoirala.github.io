@@ -65,9 +65,9 @@ function Work({background, textColor, data}) {
   return (
     <div className="row " >
 
-    <div  className="col-md-8 work pt-5">
+    <div  className="col-md-8 work pt-3">
      
-     <span  style={{textTransform: 'uppercase', fontSize: '0.8rem', fontWeight: 700}}>Select work</span >
+     <span  style={{textTransform: 'uppercase', fontSize: '0.9rem', fontWeight: 700}}>Select work</span >
      <Timeline align="left">
        {data.map((d)=> {
          return (
@@ -85,12 +85,12 @@ function Work({background, textColor, data}) {
             {d.images.length > 0 && d.images.map((i)=>{return <a href={process.env.PUBLIC_URL + 'img/' + i}><img style={{marginRight: '1rem'}} src={process.env.PUBLIC_URL + 'img/thumbs/' + i.split(".")[0] + "_tn.jpg" } /></a>})}
             </SRLWrapper>
             <br/>
-            {d.links.length > 0 && <span  style={{textTransform: 'uppercase', fontSize: '0.8rem', fontWeight: 700}}>My work</span >}
+            {d.links.length > 0 && <span  style={{textTransform: 'uppercase', fontSize: '0.9rem', fontWeight: 700}}>My work</span >}
             {d.links.map((l)=>{return <p style={{margin: 0}}><a className="project-links" href={l.url} style={{fontSize: '1.1rem'}}>{l.label}</a></p>})}
             <br/>
 
 
-            {d.related.length > 0 &&  <span  style={{textTransform: 'uppercase', fontSize: '0.8rem', fontWeight: 700}}>Related work (or) links</span >}
+            {d.related.length > 0 &&  <span  style={{textTransform: 'uppercase', fontSize: '0.9rem', fontWeight: 700}}>Related work (or) links</span >}
             {d.related.map((l)=>{return <p style={{margin: 0}}><a className="project-links" href={l.url} style={{fontSize: '1.1rem'}}>{l.label}</a></p>})}
 
             {d.related.length > 0 && <br/>}
