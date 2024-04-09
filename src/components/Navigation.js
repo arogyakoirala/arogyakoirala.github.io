@@ -14,6 +14,8 @@ function NavigationView(props) {
         className="row "
         style={{
           margin: 0,
+          borderTop: '20px solid #8C1515',
+
         }}
       >
         <div className="col-md-12 py-5">

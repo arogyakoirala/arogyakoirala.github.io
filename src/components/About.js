@@ -10,7 +10,7 @@ import PropTypes from "prop-types";
 function About({ background, textColor }) {
   return (
     <div className="row ">
-      <div className="col-md-8 about pt-3">
+      <div className="col-md-8 about pt-3" >
         <span
           style={{
             textTransform: "uppercase",
@@ -24,29 +24,13 @@ function About({ background, textColor }) {
         <br />
 
         <p className="m-0 mt-2 pb-0">
-          I am an information professional currently pursuing the Master of
-          Information Management and Systems (MIMS) program at UC Berkeley
-          School of Information, where I'm focusing on gaining skills in
-          research methods (qualitative and quantitative), machine learning, big
-          data technologies, and data for development. Prior to coming to
-          Berkeley, I served as the Tech and Innovation Lead for{" "}
-          <a href="https://kathmandulivinglabs.org"> Kathmandu Living Labs.</a>
+          I am a Machine Learning Engineer at the <a href="https://aide.stanford.edu">Stanford AIDE Lab</a>, where I develop and evaluate imaging and language based AI algorithms for clinical deployment.
         </p>
-        <br />
 
-        <p>
-          I'm interested in understanding how technology and data can help
-          address the problems faced by the world's disadvantaged populations. I
-          have 7+ years of experience in designing and developing data-driven
-          web and mobile applications aimed at disaster risk reduction, good
-          governance, civic engagement, government transparency and
-          accountability, and open data. I have a proven track record of working
-          across different information-related roles (tech lead, UX researcher,
-          data scientist, full-stack developer, manager) with a wide variety of
-          clients (government agencies, academia, fortune 500 companies, civil
-          society organizations, youth groups) in different parts of the world
-          (Nepal, India and the US).
-        </p>
+        <p className="m-0 mt-3 pb-0">I specialize in deep learning, full stack development, data visualization, and dev-ops.</p>
+        
+        
+
       </div>
 
       {/* <div  className="col-md-4  about pt-5"> */}
@@ -59,7 +43,7 @@ function About({ background, textColor }) {
           left: "8.5%",
         }}
       >
-        <img
+        {/* <img
           src="https://raw.githubusercontent.com/arogyakoirala/bucket/master/20210901_ISchoolPortraits_bhs_061.jpeg"
           className="img-fluid"
           style={{
@@ -68,7 +52,7 @@ function About({ background, textColor }) {
             opacity: 1,
             // borderBottom: "3px solid red",
           }}
-        />
+        /> */}
       </div>
     </div>
   );

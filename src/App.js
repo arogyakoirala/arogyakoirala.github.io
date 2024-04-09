@@ -12,6 +12,7 @@ import About from './components/About'
 import Work from './components/Work'
 import NotJustCode from './components/NotJustCode'
 import Experience from './components/Experience'
+import Education from './components/Education'
 import Navigation from './components/Navigation'
 import SimpleReactLightbox from 'simple-react-lightbox'
 
@@ -212,30 +213,57 @@ const workArray = [
 ];
 
 
-const educationArray = [{
-  school: "NIT Warangal, Telangana, India",
-  date: "Bachelor of Technology — Mechanical Engineering, June 2014",
-  description: "Relevant Coursework: Mathematics, Statistics, Problem Solving and Computer Programming (C++), Design and Analysis of Experiments, Production Planning and Control, Management Science and Productivity"
+const educationArray = [
+  {school: "University of California Berkeley",
+  logo: "https://raw.githubusercontent.com/arogyakoirala/bucket/master/ischool.jpeg", 
+  location: "Berkeley, CA",
+  degree: "Master of Information Management and Systems",
+  date: "2021 – 2023",
+
+  description: ""},
+  {
+  school: "NIT Warangal",
+  logo: "https://raw.githubusercontent.com/arogyakoirala/bucket/master/nitw.jpeg", 
+  location: "Telangana, India",
+  degree: "B. Tech, Mechanical Engineering",
+  date: "2010 – 2014",
+
+  description: ""
 }]
 
 const experienceArray = [{
-  role: "Tech and Innovation Lead",
+  role: "Machine Learning Engineer",
+  organization: "Stanford AIDE Lab",
+  location: "Palo Alto, CA",
+  date: "2023 - Present",
+  logo: "https://raw.githubusercontent.com/arogyakoirala/bucket/master/stanford.jpeg", 
+
+  responsibilities: ["Oversaw the implementation of all technological activities within the organization: worked directly with the organization’s executive chairman to translate the KLL’s priorities and strategic goals into technical next steps; ensured smooth collaboration between the tech team and other functional units within KLL, viz. research, design and geospatial teams", "•	Reviewed project progress and manage weekly and monthly activities of the 6 member tech team; managed communication with stakeholders, and delivered reports that summarize technical work, learnings, and next steps on a regular basis."]
+},
+  {
+  role: "Lead Engineering Manager",
   organization: "Kathmandu Living Labs",
   location: "Kathmandu, Nepal",
-  date: "September 2018 – Present",
+  date: "2018 – 2021",
+  logo: "https://raw.githubusercontent.com/arogyakoirala/bucket/master/kll.png", 
+
   responsibilities: ["Oversaw the implementation of all technological activities within the organization: worked directly with the organization’s executive chairman to translate the KLL’s priorities and strategic goals into technical next steps; ensured smooth collaboration between the tech team and other functional units within KLL, viz. research, design and geospatial teams", "•	Reviewed project progress and manage weekly and monthly activities of the 6 member tech team; managed communication with stakeholders, and delivered reports that summarize technical work, learnings, and next steps on a regular basis."]
 }, {
-  role: "Data Scientist and UI/UX engineer",
+  role: "Data Scientist",
   organization: "Kathmandu Living Labs",
   location: "Kathmandu, Nepal",
-  date: "December 2016 – Present",
+  date: "2016 – 2018",
+  logo: "https://raw.githubusercontent.com/arogyakoirala/bucket/master/kll.png", 
+
   responsibilities: []
 },
 {
-  role: "Decision Scientist",
-  organization: "Mu Sigma Business Solutions",
+  role: "Data Scientist",
+  organization: "Mu Sigma Inc.",
   location: "Bangalore, India",
-  date: "July 2014 – September 2016",
+  date: "2014 – 2016",
+  logo: "https://raw.githubusercontent.com/arogyakoirala/bucket/master/musigma.jpeg", 
+
   responsibilities: []
 }]
 
@@ -254,10 +282,10 @@ function App() {
             <br />
 
             <br />
-            {/* <Experience data={experienceArray}/> */}
-            <Work data={workArray} />
+            <Experience data={experienceArray}/>
+            {/* <Work data={workArray} /> */}
+            <Education data={educationArray}/>
             <NotJustCode />
-            {/* <Education data={educationArray}/> */}
           </Wrapper>
         </SimpleReactLightbox>
       </BrowserRouter>

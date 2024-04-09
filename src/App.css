@@ -11,6 +11,16 @@ a {
   color: #000;
 }
 
+.MuiTimelineDot-outlinedGrey {
+  border-color: #fff !important;
+}
+
+a:hover {
+  /* font-family: 'Roboto Mono'; */
+  text-decoration: underline;
+  color: #8C1515;
+}
+
 .resume-links {
   text-decoration: none;
 
